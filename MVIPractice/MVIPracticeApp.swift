@@ -11,7 +11,7 @@ import SwiftUI
 struct MVIPracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView.build()
         }
     }
 }

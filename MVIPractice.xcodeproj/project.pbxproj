@@ -11,6 +11,10 @@
 		148A2AFE2AA383E800D9A5D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A2AFD2AA383E800D9A5D9 /* ContentView.swift */; };
 		148A2B002AA383EA00D9A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148A2AFF2AA383EA00D9A5D9 /* Assets.xcassets */; };
 		148A2B032AA383EA00D9A5D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148A2B022AA383EA00D9A5D9 /* Preview Assets.xcassets */; };
+		148A2B0A2AA3840300D9A5D9 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A2B092AA3840300D9A5D9 /* Intent.swift */; };
+		148A2B0C2AA3849E00D9A5D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A2B0B2AA3849E00D9A5D9 /* Model.swift */; };
+		148A2B0E2AA3858500D9A5D9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A2B0D2AA3858500D9A5D9 /* Service.swift */; };
+		148A2B102AA386C900D9A5D9 /* MVIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A2B0F2AA386C900D9A5D9 /* MVIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		148A2AFD2AA383E800D9A5D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		148A2AFF2AA383EA00D9A5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		148A2B022AA383EA00D9A5D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		148A2B092AA3840300D9A5D9 /* Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intent.swift; sourceTree = "<group>"; };
+		148A2B0B2AA3849E00D9A5D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		148A2B0D2AA3858500D9A5D9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		148A2B0F2AA386C900D9A5D9 /* MVIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIContainer.swift; sourceTree = "<group>"; };
+		148A2B112AA42EC200D9A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,10 @@
 		148A2AFA2AA383E800D9A5D9 /* MVIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				148A2B112AA42EC200D9A5D9 /* Info.plist */,
 				148A2AFB2AA383E800D9A5D9 /* MVIPracticeApp.swift */,
-				148A2AFD2AA383E800D9A5D9 /* ContentView.swift */,
+				148A2B0F2AA386C900D9A5D9 /* MVIContainer.swift */,
+				148A2B122AA4314700D9A5D9 /* NumberFact */,
 				148A2AFF2AA383EA00D9A5D9 /* Assets.xcassets */,
 				148A2B012AA383EA00D9A5D9 /* Preview Content */,
 			);
@@ -65,6 +76,17 @@
 				148A2B022AA383EA00D9A5D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		148A2B122AA4314700D9A5D9 /* NumberFact */ = {
+			isa = PBXGroup;
+			children = (
+				148A2AFD2AA383E800D9A5D9 /* ContentView.swift */,
+				148A2B092AA3840300D9A5D9 /* Intent.swift */,
+				148A2B0B2AA3849E00D9A5D9 /* Model.swift */,
+				148A2B0D2AA3858500D9A5D9 /* Service.swift */,
+			);
+			path = NumberFact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,10 @@
 			files = (
 				148A2AFE2AA383E800D9A5D9 /* ContentView.swift in Sources */,
 				148A2AFC2AA383E800D9A5D9 /* MVIPracticeApp.swift in Sources */,
+				148A2B102AA386C900D9A5D9 /* MVIContainer.swift in Sources */,
+				148A2B0E2AA3858500D9A5D9 /* Service.swift in Sources */,
+				148A2B0A2AA3840300D9A5D9 /* Intent.swift in Sources */,
+				148A2B0C2AA3849E00D9A5D9 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +296,7 @@
 				DEVELOPMENT_TEAM = PX37AVLC5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVIPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +326,7 @@
 				DEVELOPMENT_TEAM = PX37AVLC5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVIPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
